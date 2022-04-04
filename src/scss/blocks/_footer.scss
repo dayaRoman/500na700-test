@@ -1,0 +1,36 @@
+.footer {
+    padding: 50px 0 80px;
+    background: #312f35;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    &__item {
+        
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        font-family: "MPLUS1p-Medium";
+        font-weight: 500;
+        color: #fff;
+    }
+    &__subtitle {
+        margin-bottom: 10px;
+
+        font-size: 16px;
+        line-height: 24px;
+    }
+    &__descr {
+        margin-bottom: 25px;
+
+        font-size: 14px;
+        line-height: 21px;
+    }
+    &__link {
+        font-size: 14px;
+        line-height: 21px;
+        text-decoration: underline;
+    }
+}

@@ -1,0 +1,49 @@
+.subscribe {
+    padding: 50px 0;
+    background: #fff;
+    &__title {
+        color: #0b0a0d;
+        margin-bottom: 30px;
+    }
+    &__descr {
+        font-family: "MPLUS1p-Regular";
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #0b0a0d;
+        margin-bottom: 15px;
+    }
+    &-form {
+        display: grid;
+        grid-template-columns: repeat(2, 400px);
+        gap: 20px;
+        &__input {
+            padding: 14px 15px 16px 20px;
+            width: 400px;
+            height: 50px;
+            border: 1px solid rgba(0, 0, 0, 0.4);
+            border-radius: 10px;
+
+            font-family: "MPLUS1p-Medium";
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            color: rgba(0, 0, 0, 0.6);;
+            &:focus {
+                border: 1px solid #000000;
+                color: #0b0a0d;
+            }
+        }
+        &__submit {
+            padding: 14px 20px 16px;
+            width: 141px;
+            background: #fff;
+            color: #0b0a0d;
+            transition: 0.4s all;
+            -webkit-transition: 0.4s all;
+            &:hover {
+                background: #75ff72;
+            }
+        }
+    }
+}

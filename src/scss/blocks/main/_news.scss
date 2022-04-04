@@ -1,0 +1,34 @@
+.news {
+    margin-bottom: 109px;
+    &__title {
+        margin-bottom: 30px;
+    }
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 50px 20px;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    &__image {
+        width: 400px;
+        height: 264px;
+        margin-bottom: 30px;
+    }
+    &__subtitle {
+        margin-bottom: 10px;
+        font-family: "MPLUS1p-Medium";
+        font-weight: 500;
+        font-style: 16px;
+        line-height: 24px;
+    }
+    &__descr {
+        font-family: "MPLUS1p-Medium";
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+    }
+}
