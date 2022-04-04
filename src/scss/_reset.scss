@@ -37,6 +37,9 @@ select {
 
 summary {
     list-style: none;
+    &:focus {
+        outline: none;
+    }
 }
 
 summary::-webkit-details-marker {

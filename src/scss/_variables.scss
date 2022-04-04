@@ -1,1 +1,14 @@
 $base-color: #f1f3f4;
+
+.title {
+    font-weight: 500;
+    font-family: "MPLUS1p-Medium";
+    font-size: 80px;
+    line-height: 85px;
+    @media (max-width: 767.98px) {
+        font-size: 60px;
+    }
+    @media (max-width: 575.98px) {
+        font-size: 40px;
+    }
+}

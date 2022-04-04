@@ -2,11 +2,15 @@
     padding: 50px 0 80px;
     background: #312f35;
     &__wrapper {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-    &__item {
-        
+        display: flex;
+        align-items: flex-start;
+        gap: 120px;
+        @media (max-width: 767.98px) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+        }
     }
     &__content {
         display: flex;
@@ -16,6 +20,19 @@
         font-weight: 500;
         color: #fff;
     }
+    &__socials {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        li {
+            width: 28px;
+            height: 28px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
     &__subtitle {
         margin-bottom: 10px;
 
@@ -24,7 +41,7 @@
     }
     &__descr {
         margin-bottom: 25px;
-
+        max-width: 70%;
         font-size: 14px;
         line-height: 21px;
     }

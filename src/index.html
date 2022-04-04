@@ -143,34 +143,6 @@
                                 class="src"
                             />
                         </li>
-                        <li>
-                            <img
-                                src="./img/img2carousel.png"
-                                alt=""
-                                class="src"
-                            />
-                        </li>
-                        <li>
-                            <img
-                                src="./img/img2carousel.png"
-                                alt=""
-                                class="src"
-                            />
-                        </li>
-                        <li>
-                            <img
-                                src="./img/img2carousel.png"
-                                alt=""
-                                class="src"
-                            />
-                        </li>
-                        <li>
-                            <img
-                                src="./img/img2carousel.png"
-                                alt=""
-                                class="src"
-                            />
-                        </li>
                     </ul>
                 </div>
                 <div class="carousel__arrows">
@@ -345,30 +317,40 @@
                         Отправляем анонсы новых статей, выпусков и трансляций
                     </p>
                     <form action="#" class="subscribe-form">
-                        <input
-                            class="subscribe-form__input subscribe-form__email"
-                            type="email"
-                            placeholder="Email"
-                        />
-                        <input
-                            class="subscribe-form__input subscribe-form__date"
-                            type="date"
-                            placeholder="11.02.2022"
-                        />
-                        <input
-                            class="subscribe-form__input subscribe-form__tel"
-                            type="tel"
-                            placeholder="Телефон"
-                        />
-                        <input
-                            class="subscribe-form__input subscribe-form__time"
-                            type="time"
-                            placeholder="15:00"
-                        />
+                        <div class="subscribe-form__wrapper">
+                            <input
+                                class="subscribe-form__input subscribe-form__email"
+                                type="email"
+                                placeholder="Email"
+                                pattern=".+@globex\.com"
+                                required
+                            />
+                            <input
+                                class="subscribe-form__input subscribe-form__date"
+                                type="date"
+                                placeholder="11.02.2022"
+                                required
+                            />
+                            <input
+                                class="subscribe-form__input subscribe-form__tel"
+                                type="tel"
+                                placeholder="Телефон"
+                                required
+                            />
+                            <input
+                                class="subscribe-form__input subscribe-form__time"
+                                type="time"
+                                min="00:00"
+                                max="23:59"
+                                placeholder="15:00"
+                                required
+                            />
+                        </div>
                         <input
                             class="subscribe-form__input subscribe-form__submit"
                             type="submit"
                             value="Подписаться"
+                            required
                             onclick="function click() {return false;}"
                         />
                     </form>
@@ -388,14 +370,43 @@
                             ОписаниОписание Описание Описание Описание Описание
                             Описаниее
                         </p>
-                        <a href="#" class="footer__link">500na700.ru</a>
+                        <a
+                            href="https://500na700.ru/"
+                            target="_black"
+                            class="footer__link"
+                            >500na700.ru</a
+                        >
                     </div>
-                    <div class="footer__socials">
-                        <div class="footer__item"></div>
-                        <div class="footer__item"></div>
-                        <div class="footer__item"></div>
-                        <div class="footer__item"></div>
-                    </div>
+                    <ul class="footer__socials">
+                        <li>
+                            <a href="#" class="footer__icon"
+                                ><img
+                                    src="./img/icons/socials/VectorVk.svg"
+                                    alt="VK"
+                            /></a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__icon"
+                                ><img
+                                    src="./img/icons/socials/VectorFacebook.svg"
+                                    alt="Facebook"
+                            /></a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__icon"
+                                ><img
+                                    src="./img/icons/socials/VectorTikTok.svg"
+                                    alt="TikTok"
+                            /></a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__icon"
+                                ><img
+                                    src="./img/icons/socials/VectorYT.svg"
+                                    alt="YouTube"
+                            /></a>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <!-- END FOOTER -->

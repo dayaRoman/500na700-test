@@ -14,5 +14,9 @@ export default function () {
             event.target.classList.toggle("header__link_active");
             dropdown.classList.toggle("dropdown-menu_active");
         }
+
+        if (event.target.classList.contains("dropdown-menu__link")) {
+            event.preventDefault();
+        }
     });
 }

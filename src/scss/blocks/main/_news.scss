@@ -1,5 +1,6 @@
 .news {
     margin-bottom: 109px;
+    
     &__title {
         margin-bottom: 30px;
     }
@@ -7,6 +8,9 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 50px 20px;
+        @media (max-width: 1279.98px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
     }
     &__item {
         display: flex;
@@ -14,8 +18,8 @@
         justify-content: flex-start;
     }
     &__image {
-        width: 400px;
-        height: 264px;
+        // width: 400px;
+        // height: 264px;
         margin-bottom: 30px;
     }
     &__subtitle {
@@ -30,5 +34,6 @@
         font-weight: 500;
         font-size: 14px;
         line-height: 21px;
+        max-width: 70%;
     }
 }
