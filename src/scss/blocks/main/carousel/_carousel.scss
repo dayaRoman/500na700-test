@@ -1,0 +1,40 @@
+.carousel {
+    width: 100vw;
+    margin-bottom: 170px;
+    &__gallery {
+        width: 100vw;
+        margin-bottom: 75px;
+        overflow: hidden;
+        ul {
+            height: 650px;
+            width: 9999px;
+            transition: margin-left 250ms;
+            -webkit-transition: margin-left 250ms;
+            li {
+                display: inline-block;
+                font-size: 0;
+                margin-right: 20px;
+                @media (max-width: 1023.98px) {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+    &__arrows {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+    }
+
+    &__prev, &__next {
+        &:hover {
+            svg path {
+                fill: #75ff72;
+            }
+        }
+    }
+}
+
+

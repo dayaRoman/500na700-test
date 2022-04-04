@@ -1,5 +1,5 @@
 .dropdown-menu {
-    padding: 0 0 50px 32px;
+    padding: 30px 0 50px 32px;
     width: 100vw;
     max-height: 70vh;
     background-color: #0b0a0d;
@@ -35,7 +35,7 @@
     }
 
     &_active {
-        top: 40vh;
+        top: 30vh;
     }
 
     &__overlay {

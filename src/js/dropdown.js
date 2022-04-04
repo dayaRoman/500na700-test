@@ -5,6 +5,7 @@ export default function () {
     
     header.addEventListener("click", function(event) {
         if (event.target.classList.contains("header__link")) {
+            event.preventDefault();
             links.forEach((item) => {
                 if (item.classList.contains("header__link_active")) {
                     item.classList.toggle("header__link_active");

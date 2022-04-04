@@ -1,4 +1,5 @@
 const path = require("path");
+const webpack = require('webpack');
 const HTMLWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
@@ -39,6 +40,10 @@ const plugins = () => {
         }),
         new MiniCssExtractPlugin({
             filename: `./css/${filename("css")}`,
+        }),
+        new webpack.ProvidePlugin({
+            $: "jquery",
+            jQuery: "jquery",
         }),
     ];
 

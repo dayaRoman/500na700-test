@@ -1,0 +1,43 @@
+.faq {
+    &__title {
+        color: #fff;
+    }
+    &__container {
+        display: flex;
+        align-items: flex-start;
+        gap: 98px;
+    }
+    details[open] summary ~ * {
+        animation: sweep 0.4s ease-in-out;
+    }
+    @keyframes sweep {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    &__content {
+        width: 100vw;
+        border-top: 1px solid #fff;
+    }
+    details {
+        padding: 30px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);;
+    };
+    &__question {
+        font-family: "MPLUS1p-Regular";
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 35px;
+        cursor: pointer;
+    }
+    &__answer {
+        font-family: "MPLUS1p-Regular";
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 30px;
+    }
+}

@@ -5,15 +5,24 @@
 @import "links";
 
 @import "./blocks/header/header";
-@import "./blocks/main";
+@import "./blocks/main/main";
 
 body {
     background: #0b0a0d;
     color: #fff;
+    overflow-x: hidden;
 }
 
 .container {
     max-width: 1240px;
     padding: 0 5px;
     margin: 0 auto;
+}
+
+.title {
+    font-weight: 500;
+    font-family: "MPLUS1p-Medium";
+    font-size: 80px;
+    line-height: 85px;
+    text-transform: uppercase;
 }

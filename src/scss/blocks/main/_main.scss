@@ -1,5 +1,8 @@
+@import "./carousel/carousel";
+@import "./faq";
+
 .main {
-    margin-top: 8px;
+    margin-top: 212px;
     @media (max-width: 575.98px) {
         margin-top: 150px;
     }
