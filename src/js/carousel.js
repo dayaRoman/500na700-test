@@ -1,21 +1,50 @@
 export default function () {
-    let carousel = document.querySelector(".carousel");
-    let list = carousel.querySelector("ul");
-    let listElems = carousel.querySelectorAll("li");
-    let width = list.querySelector("img").offsetWidth;
+    const $ = require("jquery");
+    $(".carousel__gallery").slick({
+        centerMode: true,
+        centerPadding: "20px",
+        slidesToShow: 1,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: "40px",
+                    slidesToShow: 3,
+                },
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: "40px",
+                    slidesToShow: 1,
+                },
+            },
+        ],
+    });
 
-    let position = 0;
-    let count = 1;
-
-    carousel.querySelector(".carousel__prev").onclick = function () {
-        position += width;
-        position = Math.min(position, 0);
-        list.style.marginLeft = position + "px";
-    };
-
-    carousel.querySelector(".carousel__next").onclick = function () {
-        position -= width;
-        position = Math.max(position, -width * (listElems.length - count));
-        list.style.marginLeft = position + "px";
-    };
+    $(".news__wrapper").slick({
+        responsive: [
+            {
+                breakpoint: 2560,
+                settings: "unslick",
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    dots: false,
+                    arrows: false,
+                    infinite: false,
+                    centerMode: true,
+                    centerPadding: '20px',
+                    speed: 300,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                },
+            },
+        ],
+    });
 }

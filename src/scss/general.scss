@@ -4,6 +4,9 @@
 @import "variables";
 @import "links";
 
+@import "slick/slick";
+@import "slick/slick-theme";
+
 @import "./blocks/header/header";
 @import "./blocks/main/main";
 @import "./blocks/footer";

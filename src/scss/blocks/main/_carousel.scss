@@ -1,35 +1,25 @@
 .carousel {
-    display: none;
-    width: 100vw;
-    margin-bottom: 170px;
+    margin-bottom: 245px;
     &__gallery {
+        height: 650px;
         width: 100vw;
-        margin-bottom: 75px;
-        overflow: hidden;
-        ul {
-            height: 650px;
-            width: 9999px;
-            transition: margin-left 250ms;
-            -webkit-transition: margin-left 250ms;
-            li {
-                display: inline-block;
-                font-size: 0;
-                margin-right: 20px;
-                @media (max-width: 1023.98px) {
-                    margin-right: 0;
-                }
-            }
-        }
+        z-index: 1;
+    }
+
+    &__slide {
+        width: 100vw;
     }
 
     &__arrows {
+        display: none;
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 32px;
     }
 
-    &__prev, &__next {
+    &__prev,
+    &__next {
         &:hover {
             svg path {
                 fill: #75ff72;
@@ -37,5 +27,3 @@
         }
     }
 }
-
-

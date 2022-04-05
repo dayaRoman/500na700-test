@@ -3,7 +3,6 @@
     background: #fff;
     &__title {
         color: #0b0a0d;
-        margin-bottom: 30px;
     }
     &__descr {
         font-family: "MPLUS1p-Regular";
@@ -20,7 +19,11 @@
             align-items: center;
             flex-wrap: wrap;
             gap: 20px;
+            max-width: 820px;
             margin-bottom: 20px;
+            @media (max-width: 575.98px) {
+                justify-content: center;
+            }
         }
         &__input {
             padding: 14px 15px 16px 20px;
@@ -50,5 +53,12 @@
                 background: #75ff72;
             }
         }
+        @media (max-width: 575.98px) { 
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+         }
     }
 }

@@ -5,8 +5,10 @@ $base-color: #f1f3f4;
     font-family: "MPLUS1p-Medium";
     font-size: 80px;
     line-height: 85px;
+    margin-bottom: 30px;
     @media (max-width: 767.98px) {
         font-size: 60px;
+        margin-bottom: 20px;
     }
     @media (max-width: 575.98px) {
         font-size: 40px;
