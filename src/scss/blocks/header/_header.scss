@@ -3,7 +3,7 @@
 @import "./dropdown";
 
 .header {
-    background: #0B0A0D;
+    background: #0b0a0d;
     overflow: hidden;
     position: fixed;
     top: 0;
@@ -11,6 +11,7 @@
     padding-top: 90px;
     &__logo {
         z-index: 20;
+        cursor: pointer;
     }
     z-index: 101;
     &__wrapper {

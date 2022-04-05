@@ -4,8 +4,11 @@
 @import "./subscribe";
 
 .main {
-    margin-top: 212px;
+    margin-top: 114px;
+    @media (max-width: 767.98px) {
+        margin-top: 98px;
+    }
     @media (max-width: 575.98px) {
-        margin-top: 150px;
+        margin-top: 0;
     }
 }
